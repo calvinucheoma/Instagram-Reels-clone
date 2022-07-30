@@ -1,0 +1,116 @@
+.videoFooter{
+    position: relative;
+    bottom: 90px;
+    margin-left: 20px;
+}
+
+
+.videoFooterText{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.videoFooterText > h3 {
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+
+.videoFooterText > h3 > button {
+    color: white;
+    font-weight: 900;
+    text-transform: inherit;
+}
+
+.videoFooterScrollText > p {
+    transform: translateX(100%);
+    animation: scrolling 10s linear infinite;
+    color: white;
+    font-size: 12px;
+    padding-top: 7px;
+}
+
+.videoFooterScrollText {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.videoFooterIcon{
+    position: absolute;
+    left: 5px;
+    color: white;
+}
+
+.videoFooterActions{
+    display: flex;
+    position: absolute;
+    width: 95%;
+    justify-content: space-between;
+    color: white;
+}
+
+.videoFooterActionsLeft > .MuiSvgIcon-root{
+    padding: 0 8px;
+}
+
+.videoFooterActionsRight{
+    display: flex;
+}
+
+.videoFooterStat{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.videoFooterStat > p{
+    margin-left: 3px;
+}
+
+@media (width < 480px) {
+
+    .videoFooter {
+        bottom: 110px;
+        margin-left: 10px;
+    }
+
+    .videoFooterText > h3{
+        font-size: 14px;
+    }
+
+    .videoFooterActionsLeft>.MuiSvgIcon-root {
+        padding: 0 8px;
+    }
+
+    .videoFooterStat{
+        margin-right: 1px;
+    }
+
+    .videoFooterStat > p{
+        font-size: 12px;
+    }
+
+}
+
+@media (width < 372px) {
+
+    .videoFooter {
+        bottom: 110px;
+        margin-left: 2px;
+    }
+}
